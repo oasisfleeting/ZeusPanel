@@ -43,7 +43,7 @@ if (!empty($_POST[username]))
 	
 	$row = mysql_fetch_assoc($query);
 	$username = $row["username"];
-	$usertype = $row["rank"];
+	$usertype = $row["usertype"];
 	
 	if (!empty($username)) // he got it.
 	{
@@ -53,7 +53,7 @@ if (!empty($_POST[username]))
 		// 3 = Administrator
 		if(intval($rank) > 2){
 		$_SESSION['adminusername'] = $username;
-		$_SESSION[rank] = $rank;
+		$_SESSION[usertype] = $usertype;
 		header('Location: main.php');
 		exit();
 		} else {
