@@ -50,14 +50,17 @@ if (!empty($_POST[username]))
 		//Now we have to check what rank the person is.
 		// 1 = User
 		// 2 = Reseller
-		// 3 = Administrator
-		if(intval($usertype) > 2){
-		$_SESSION['adminusername'] = $username;
+		if(intval($usertype) < 2){
+		//Reseller
+		$_SESSION['resellerusername'] = $username;
 		$_SESSION[usertype] = $usertype;
-		header('Location: main.php');
+		header('Location: reseller/index.php');
 		exit();
 		} else {
-			echo "Your account is not authorized to access WHM.";	
+		//Normal domain owner
+		$_SESSION['resellerusername'] = $username;
+		$_SESSION['usertype'] = $usertype;
+		header('Location: user/index.php');
 		}
 	}
 	else // bad info.
