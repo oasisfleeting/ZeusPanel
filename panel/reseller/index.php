@@ -19,6 +19,9 @@
 	left: 239px;
 	top: 151px;
 }
+#home {
+	margin-left: auto;
+}
 </style></head>
 
 <body>
