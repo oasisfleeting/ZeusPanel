@@ -1,0 +1,65 @@
+#IPBAR{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:40px;
+	color:white;
+	background-color:#545454;
+	font-family:arial;
+	font-size:20px;
+	text-align:right;
+}
+
+#LOGOUT{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:200px;
+	height:40px;
+}
+
+.sideItem{
+	width:200px;
+	height:30px;
+	background-color:silver;
+	border-radius:25px;
+	text-align:center;
+	padding-top:10px;
+	font-family:Arial, Calibri;
+	font-size:20px;
+	
+margin-top:10px;
+}
+
+.sideItem:hover{
+	box-shadow:3px 3px 2px aqua;
+	cursor:pointer;
+}
+
+.sideItem a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+#ZEUSPANEL_LEFT{
+	position:absolute;
+	left:0px;
+	top:40px;
+	bottom:0px;
+	width:200px;
+	background-color:#737373;
+	padding-top:5px;
+}	
+
+#CONTENT{
+	position:absolute;
+	left:200px;
+	top:40px;
+	right:0px;
+	bottom:0px;
+	background-color:grey;
+}#CONTENT iframe {
+	width: 100%;
+	height: 100%;
+}
