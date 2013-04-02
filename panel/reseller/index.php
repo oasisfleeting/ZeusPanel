@@ -16,7 +16,6 @@
 }
 #home {
 	position: absolute;
-	left: 239px;
 	top: 151px;
 }
 #home {
@@ -26,7 +25,7 @@
 
 <body>
 <div id="container">
-  <div id="header"><a href="index.php"><img src="img/home.png" width="51" height="52" alt="home" id="home" style="border-style: none"/></a></div>
+  <div id="header"><a href="index.php"><img src="img/home.png" alt="home" name="home" width="51" height="52" id="home" style="border-style: none"/></a></div>
   <p>Container content</p>
 </div>
 </body>
